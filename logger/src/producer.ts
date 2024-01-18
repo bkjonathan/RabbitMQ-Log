@@ -1,4 +1,4 @@
-import ampq, { Channel } from 'amqplib'
+import ampq from 'amqplib'
 
 export class Producer {
   private readonly config = {
