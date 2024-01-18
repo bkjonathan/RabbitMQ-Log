@@ -1,6 +1,8 @@
-import express, { Express } from 'express'
+import express from 'express'
 import bodyParser from 'body-parser'
 import { Producer } from './producer'
+
+const producer = new Producer()
 
 const app = express()
 
@@ -11,10 +13,12 @@ app.get('/', (req, res) => {
     message: 'Hello from Rabbit MQ'
   })
 })
-app.post('/sendLog', async (req, res, next) => {
-  const producer = new Producer()
-  await producer.publishMessage(req.body.logType, req.body.message)
-  res.send()
+app.post('/sendLog', async (req, res) => {
+
+  await producer.publishMessage(req.body.type, req.body.message)
+  res.send({
+    ...req.body
+  })
 })
 
 app.listen(3000, () => {

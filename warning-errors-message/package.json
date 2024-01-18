@@ -1,0 +1,10 @@
+{
+  "name": "rabbit-mq-logger",
+  "version": "1.0.0",
+  "author": "bkjonathan<thomas>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
