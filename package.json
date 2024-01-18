@@ -1,0 +1,24 @@
+{
+  "name": "rabbit-mq-logger",
+  "version": "1.0.0",
+  "author": "bkjonathan<thomas>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}
