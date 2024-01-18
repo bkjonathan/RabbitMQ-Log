@@ -1,7 +1,7 @@
 const amqb = require('amqplib')
 
 async function consumeMessages(){
-  const url = 'amqp://root:rootPwd@localhost'
+  const url = 'amqp://root:rootPwd@rabbitMQ'
   const exchangeKey = 'logExchange'
 
   const connection = await amqb.connect(url)

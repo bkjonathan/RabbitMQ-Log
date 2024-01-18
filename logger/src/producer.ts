@@ -3,7 +3,7 @@ import ampq from 'amqplib'
 export class Producer {
   private readonly config = {
     // url: 'amqp://localhost:15672',
-    url: 'amqp://root:rootPwd@localhost',
+    url: 'amqp://root:rootPwd@rabbitMQ',
     exchangeName: 'logExchange'
   }
   private channel: any = null
